@@ -26,6 +26,10 @@ public class SpotbugsTest {
 
     // 4. StringIndexOutOfBoundsException
     String text = "Buggy";
-    System.out.println(text.substring(10)); // Index out of range
+    if (text.length() > 10) {
+      System.out.println(text.substring(10));
+    } else {
+      System.out.println("Index out of bounds for substring operation");
+    }
   }
 }
