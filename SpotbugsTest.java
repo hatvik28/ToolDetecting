@@ -1,4 +1,3 @@
-
 public class SpotbugsTest {
 
   public static void main(String[] args) {
@@ -12,7 +11,11 @@ public class SpotbugsTest {
 
     // 2. Array Index Out of Bounds
     int[] numbers = {1, 2, 3};
-    System.out.println(numbers[3]); // Accessing index out of bounds
+    if (numbers.length > 3) {
+      System.out.println(numbers[3]); // Accessing index out of bounds
+    } else {
+      System.out.println("Index out of bounds");
+    }
 
     // 3. Infinite Loop
     int i = 0;
