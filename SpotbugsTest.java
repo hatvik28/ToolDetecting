@@ -19,8 +19,9 @@ public class SpotbugsTest {
 
     // 3. Infinite Loop
     int i = 0;
-    while (i >= 0) { // Infinite loop as i is never decremented
-      System.out.println("Infinite Loop!");
+    while (i < 5) { // Loop will terminate after 5 iterations
+      System.out.println("Loop iteration: " + i);
+      i++;
     }
 
     // 4. StringIndexOutOfBoundsException
